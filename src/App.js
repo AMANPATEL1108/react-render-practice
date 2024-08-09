@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import UseStateOneFile from "./components/UseStateOne/UseStateOneFile";
+import UsereduceOne from "./components/UseReducerOne/UsereduceOne";
+import { ObjectUseState } from "./components/ImmutableState/ObjectUseState";
+import { ArrayUseState } from "./components/ImmutableState/ArrayUseState";
+import Parent from "./components/ParentChild/Parent";
+import ParentOne from "./components/Optimization/ParentOne";
+import { ChildOne } from "./components/Optimization/ChildOne";
+import { GrandParent } from "./components/Optimization/GrandParent";
+import ParentTwo from "./components/Optimization/ParentTwo";
+import ParentThree from "./components/InCorrectOptimization/ParentThree";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ParentThree />
+      {/* <ParentTwo /> */}
+      {/* <GrandParent /> */}
+      {/* <ParentOne>
+        <ChildOne />
+      </ParentOne> */}
+      {/* <Parent /> */}
+      {/* <ArrayUseState /> */}
+      {/* <ObjectUseState /> */}
+      {/* <UsereduceOne /> */}
+      {/* <UseStateOneFile /> */}
     </div>
   );
 }
